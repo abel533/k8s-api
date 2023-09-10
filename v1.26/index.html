@@ -8,47 +8,59 @@
     <link rel="shortcut icon" type=image/png href=/favicon.png>
     <title>Kubernetes API Reference Docs - v1.26</title>
     <style>
-        .main-title {
-            height: 50px;
-            text-align: center;
+        .header {
             font-weight: bold;
             border: 1px dotted gray;
-            line-height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .header div {
+            margin: 10px;
         }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1797264872895352"
         crossorigin=anonymous></script>
-    <link href=/css/app.18b108f9.css rel=preload as=style>
-    <link href=/css/chunk-vendors.8c0f8930.css rel=preload as=style>
-    <link href=/js/app.8c204aab.js rel=preload as=script>
-    <link href=/js/chunk-vendors.10503fc7.js rel=preload as=script>
-    <link href=/css/chunk-vendors.8c0f8930.css rel=stylesheet>
-    <link href=/css/app.18b108f9.css rel=stylesheet>
+    <link href=/v1.26/css/app.9bda17cd.css rel=preload as=style>
+    <link href=/v1.26/css/chunk-vendors.8c0f8930.css rel=preload as=style>
+    <link href=/v1.26/js/app.fc00d72e.js rel=preload as=script>
+    <link href=/v1.26/js/chunk-vendors.10503fc7.js rel=preload as=script>
+    <link href=/v1.26/css/chunk-vendors.8c0f8930.css rel=stylesheet>
+    <link href=/v1.26/css/app.9bda17cd.css rel=stylesheet>
 </head>
 
-<body><noscript><strong>We're sorry but Kubernetes API Reference Docs - v1.26 doesn't work properly without JavaScript
-            enabled. Please enable it to continue.</strong></noscript>
-    <div class="main-title">
-        <a data-v-04321270="" href="/" class="one-pan-link-mark">v1.27</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.26" class="one-pan-link-mark">v1.26</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.25" class="one-pan-link-mark">v1.25</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.24" class="one-pan-link-mark">v1.24</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.23" class="one-pan-link-mark">v1.23</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.22" class="one-pan-link-mark">v1.22</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.21" class="one-pan-link-mark">v1.21</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.20" class="one-pan-link-mark">v1.20</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.19" class="one-pan-link-mark">v1.19</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.18" class="one-pan-link-mark">v1.18</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.17" class="one-pan-link-mark">v1.17</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.16" class="one-pan-link-mark">v1.16</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.15" class="one-pan-link-mark">v1.15</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.14" class="one-pan-link-mark">v1.14</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.13" class="one-pan-link-mark">v1.13</a>&nbsp;|&nbsp;
-        <a data-v-04321270="" href="/v1.12" class="one-pan-link-mark">v1.12</a>
+<body style="display: flex;flex-direction: column;height: 100%;"><noscript><strong>We're sorry but Kubernetes API
+            Reference Docs - v1.26 doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div class=header id=versionContainer></div>
+    <div id=app style=flex:1;overflow:auto;></div>
+    <div class=footer style="height:200px;padding:10px;text-align: center;">
+        <div class=donate>
+            <h3>项目的发展离不开你的支持，请作者喝杯咖啡吧！</h3>
+            <h4>支付时留下邮箱还可以获得本项目前端源码和完整的 k8s api 结构化数据</h4>
+            <div style="width: 600px;margin:0 auto;text-align:center;">
+                <div style="float: left;"><img src=https://mybatis.io/img/wx_pay.png width=200></div>
+                <div style="float: right;"><img src=https://mybatis.io/img/ali_pay.png width=200></div>
+            </div>
+        </div>
     </div>
-    <div id=app></div>
-    <script src=/js/chunk-vendors.10503fc7.js></script>
-    <script src=/js/app.8c204aab.js></script>
+    <script>let html = '';
+        const start = 12, end = 28;
+        for (let i = end; i >= start; i--) {
+            if (i == end) {
+                html += '<div><a href="/" class="one-pan-link-mark">Current(v1.' + i + ')</a></div>';
+            } else if (i == start) {
+                html += '<div><a href="/1.' + i + '" class="one-pan-link-mark">v1.' + i + '</a></div>';
+            } else {
+                html += '<div><a href="/1.' + i + '" class="one-pan-link-mark">v1.' + i + '</a></div>';
+            }
+        }
+        html += `</select>`;
+        document.getElementById('versionContainer').innerHTML = html;</script>
+    <script src=/v1.26/js/chunk-vendors.10503fc7.js></script>
+    <script src=/v1.26/js/app.fc00d72e.js></script>
 </body>
 
 </html>
