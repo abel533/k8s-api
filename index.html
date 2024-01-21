@@ -1,23 +1,51 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=/favicon.png><title>Kubernetes API Reference Docs - v1.29</title><style>.header {
-            font-weight: bold;
-            border: 1px dotted gray;
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=/favicon.png><title>Kubernetes API Reference Docs - v1.29</title><style>body {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 10px;
+            flex-direction: column;
+            height: 100vh;
+            min-height: 700px;
+            margin: 0;
+            overflow: hidden;
         }
+
+        .header {
+            height: 50px;
+            min-height: 50px;
+            background-color: rgba(0,0,0,7%);
+            display: flex;
+            justify-content: center; /* 使 div 之间有一些间距 */
+            align-items: center; /* 垂直居中 div */
+            overflow-x: auto; /* 如果 div 太多，使其可以滚动 */
+        }
+
         .header div {
-            margin: 10px;
-        }</style><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1797264872895352" crossorigin=anonymous></script><link href=/css/app.9bda17cd.css rel=preload as=style><link href=/css/chunk-vendors.8c0f8930.css rel=preload as=style><link href=/js/app.f9333cdd.js rel=preload as=script><link href=/js/chunk-vendors.366cd0f5.js rel=preload as=script><link href=/css/chunk-vendors.8c0f8930.css rel=stylesheet><link href=/css/app.9bda17cd.css rel=stylesheet></head><body style="display: flex;flex-direction: column;height: 100%;"><noscript><strong>We're sorry but Kubernetes API Reference Docs - v1.29 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=header id=versionContainer></div><div id=app style=flex:1;overflow:auto;></div><div class=footer style="height:200px;padding:10px;text-align: center;"><div class=donate><h3>项目的发展离不开你的支持，请作者喝杯咖啡吧！</h3><h4>支付时留下邮箱还可以获得本项目前端源码和完整的 k8s api 结构化数据</h4><div style="width: 600px;margin:0 auto;text-align:center;"><div style="float: left;"><img src=https://mybatis.io/img/wx_pay.png width=200></div><div style="float: right;"><img src=https://mybatis.io/img/ali_pay.png width=200></div></div></div></div><script>let html = '';
-    const start = 12, end = 29;
-    for(let i = end; i >= start; i-- ) {
-        if(i == end) {
-            html += '<div><a href="/" class="one-pan-link-mark">Current(v1.' + i + ')</a></div>';
-        } else if(i == start) {
-            html += '<div><a href="/v1.' + i + '/" class="one-pan-link-mark">v1.' + i + '</a></div>';
-        } else {
-            html += '<div><a href="/v1.' + i + '/" class="one-pan-link-mark">v1.' + i + '</a></div>';
+            margin: 0 10px; /* 在每个 div 之间添加一些间距 */
         }
-    }
-    html += `</select>`;
-    document.getElementById('versionContainer').innerHTML = html;</script><script src=/js/chunk-vendors.366cd0f5.js></script><script src=/js/app.f9333cdd.js></script></body></html>
+
+        .header a {
+            color: #3371e3;
+            /* text-decoration: none; 去掉链接下划线 */
+        }
+
+        .header a:hover {
+            color: #007BFF; /* 鼠标悬停时改变链接颜色 */
+        }
+
+        .footer {
+            height: 240px;
+            background-color: #f5f5f5;
+            display: flex; /* 设置为 flex 布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }</style><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1797264872895352" crossorigin=anonymous></script><link href=/css/app.e7971501.css rel=preload as=style><link href=/js/app.9f36b68d.js rel=preload as=script><link href=/js/chunk-vendors.ecaf3297.js rel=preload as=script><link href=/css/app.e7971501.css rel=stylesheet></head><body><noscript><strong>We're sorry but Kubernetes API Reference Docs - v1.29 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=header id=versionContainer></div><div class=center id=app></div><script>let html = '';
+        const start = 12, end = 29;
+        for(let i = end; i >= start; i-- ) {
+            if(i == end) {
+                html += '<div><a href="/" class="one-pan-link-mark">Current(v1.' + i + ')</a></div>';
+            } else if(i == start) {
+                html += '<div><a href="/v1.' + i + '/" class="one-pan-link-mark">v1.' + i + '</a></div>';
+            } else {
+                html += '<div><a href="/v1.' + i + '/" class="one-pan-link-mark">v1.' + i + '</a></div>';
+            }
+        }
+        html += `</select>`;
+        document.getElementById('versionContainer').innerHTML = html;</script><script src=/js/chunk-vendors.ecaf3297.js></script><script src=/js/app.9f36b68d.js></script></body></html>
